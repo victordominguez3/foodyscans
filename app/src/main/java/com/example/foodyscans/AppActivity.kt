@@ -71,32 +71,6 @@ class AppActivity : AppCompatActivity() {
             true
         }
 
-//        replaceFragment(ExploreFragment())
-//        binding.nav.selectedItemId = R.id.explore
-//
-//        binding.nav.setOnItemSelectedListener {
-//
-//            when (it.itemId) {
-//                R.id.explore -> {
-//                    replaceFragment(ExploreFragment())
-//                    window.statusBarColor = ContextCompat.getColor(this, R.color.dark_green_1)
-//                }
-//                R.id.marker -> {
-//                    replaceFragment(MarkersFragment())
-//                    window.statusBarColor = ContextCompat.getColor(this, R.color.almost_white)
-//                }
-//                R.id.recipes -> {
-//                    replaceFragment(RecipesFragment())
-//                    window.statusBarColor = ContextCompat.getColor(this, R.color.almost_white)
-//                }
-//                R.id.profile -> {
-//                    replaceFragment(ProfileFragment())
-//                    window.statusBarColor = ContextCompat.getColor(this, R.color.dark_green_1)
-//                }
-//            }
-//            true
-//        }
-
     }
 
     private fun setFragment(itemId: Int) {
@@ -144,20 +118,6 @@ class AppActivity : AppCompatActivity() {
             is MarkersFragment, is RecipesFragment -> true
             else -> false
         }
-        setStatusBarTextColor(isLightBackground)
-    }
-
-    private fun replaceFragment(fragment: Fragment) {
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fragment, fragment)
-        fragmentTransaction.commit()
-
-        val isLightBackground = when (fragment) {
-            is MarkersFragment, is RecipesFragment -> true
-            else -> false
-        }
-
         setStatusBarTextColor(isLightBackground)
     }
 
