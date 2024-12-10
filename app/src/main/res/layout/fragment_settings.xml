@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/dark_green_5"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    tools:context=".dialogs.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajustes"
+            android:textColor="@color/almost_white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_tab_item"
+            android:layout_marginTop="10dp">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rowCount="2"
+                android:columnCount="2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+
+                <Switch
+                    android:id="@+id/flash_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:thumbTint="@color/switch_thumb_color"
+                    android:trackTint="@color/switch_track_color"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flash al escanear un prodcuto"
+                    android:textColor="@color/dark_green_1"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"/>
+
+                <Switch
+                    android:id="@+id/sound_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:thumbTint="@color/switch_thumb_color"
+                    android:trackTint="@color/switch_track_color"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sonido al escanear un prodcuto"
+                    android:textColor="@color/dark_green_1"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+
+            </GridLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/change_password_button"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:text="CAMBIAR CONTRASEÑA"
+                android:textColor="@color/almost_white"
+                android:backgroundTint="@color/dark_green_5"
+                app:cornerRadius="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/delete_account_button"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:text="ELIMINAR CUENTA"
+                android:textColor="@color/almost_white"
+                android:backgroundTint="@color/design_default_color_error"
+                app:cornerRadius="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

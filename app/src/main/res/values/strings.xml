@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">foodyscans</string>
+    <string name="no_tienes_cuenta_a_n_reg_strate"><u>¿No tienes cuenta aún? Regístrate</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nutriscore_info">El Nutri-Score es un logotipo que indica la calidad nutricional general de los productos.\n\nLa puntuación, que va de la A a la E, se calcula en función de los nutrientes y alimentos a favorecer (proteínas, fibra, frutas, verduras y legumbres, entre otros) y los nutrientes a limitar (calorías, grasas saturadas, azúcares y sal). Esta puntuación se obtiene a partir de los datos de la tabla de información nutricional y de los datos de composición (frutas, verduras y legumbres).</string>"
+    <string name="nova_info">Los productos alimenticios se clasifican en 4 grupos según su grado de procesamiento:\n\n1.   Alimentos no procesados o mínimamente procesados\n\n2.   Ingredientes culinarios procesados\n\n3.   Alimentos procesados\n\n4.   Alimentos ultraprocesados\n\nLa determinación del grupo se basa en la categoría del producto y en los ingredientes que contiene.</string>
+    <string name="ecoscore_info">El Eco-Score está diseñado siguiendo un modelo similar al Nutri-Score: se trata de una calificación de la A a la E que resume 15 impactos ambientales.\n\nLa puntuación del Eco-Score se representa mediante un logotipo en forma de hoja de color, acompañado de una letra, desde la A (impacto muy bajo) hasta la E (impacto muy alto).</string>
+</resources>

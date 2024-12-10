@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color cuando el campo está enfocado -->
+    <item android:color="@color/almost_white" android:state_focused="true" />
+    <!-- Color cuando el campo NO está enfocado -->
+    <item android:color="@color/almost_white" />
+</selector>

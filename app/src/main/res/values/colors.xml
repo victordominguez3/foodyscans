@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_green_1">#042326</color>
+    <color name="dark_green_2">#0A3A40</color>
+    <color name="dark_green_3">#0F5959</color>
+    <color name="dark_green_4">#1D7373</color>
+    <color name="dark_green_5">#107361</color>
+    <color name="almost_white">#f0f0f0</color>
+    <color name="nutriments_high">#FF6A6A</color>
+    <color name="nutriments_moderate">#FFB86A</color>
+    <color name="nutriments_low">#6AFF92</color>
+    <color name="hints">#801D7373</color>
+</resources>

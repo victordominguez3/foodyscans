@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DietsFragment"
+    android:background="@color/dark_green_1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/rounded_header"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Sigues alguna dieta en especial?"
+                android:textColor="@color/dark_green_1"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Sigues alguna dieta plant-based?"
+                android:textColor="@color/almost_white"
+                android:textSize="16sp"/>
+
+            <RadioGroup
+                android:id="@+id/radio_diets_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/vegano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Vegano"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"/>
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/vegetariano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Vegetariano"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="10dp"/>
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="No"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="10dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nivel de grasas"
+                android:textColor="@color/almost_white"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"/>
+
+            <RadioGroup
+                android:id="@+id/radio_fats_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/low_fats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Bajo"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="10dp"/>
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/moderate_fats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Moderado"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="15dp"/>
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/high_fats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Alto"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="15dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nivel de grasas saturadas"
+                android:textColor="@color/almost_white"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"/>
+
+            <RadioGroup
+                android:id="@+id/radio_saturated_fats_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/low_sfats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Bajo"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="10dp"/>
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/moderate_sfats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Moderado"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="15dp"/>
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/high_sfats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Alto"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="15dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nivel de azúcares"
+                android:textColor="@color/almost_white"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"/>
+
+            <RadioGroup
+                android:id="@+id/radio_sugars_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/low_sugars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Bajo"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="10dp"/>
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/moderate_sugars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Moderado"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="15dp"/>
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/high_sugars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Alto"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="15dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nivel de sales"
+                android:textColor="@color/almost_white"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"/>
+
+            <RadioGroup
+                android:id="@+id/radio_salt_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/low_salt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Bajo"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="10dp"/>
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/moderate_salt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Moderado"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="15dp"/>
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/high_salt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Alto"
+                    android:textColor="@color/almost_white"
+                    android:textSize="14sp"
+                    app:buttonTint="@color/almost_white"
+                    android:layout_marginStart="15dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otros:"
+                android:textColor="@color/almost_white"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/palm_oil"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Quiero productos sin aceite de palma"
+                android:textColor="@color/almost_white"
+                android:textSize="14sp"
+                android:buttonTint="@color/almost_white"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pork"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Mi dieta no incluye carne de cerdo"
+                android:textColor="@color/almost_white"
+                android:textSize="14sp"
+                android:buttonTint="@color/almost_white"
+                android:layout_marginStart="10dp"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/beef"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Mi dieta no incluye carne de ternera"
+                android:textColor="@color/almost_white"
+                android:textSize="14sp"
+                android:buttonTint="@color/almost_white"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+        <RelativeLayout
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/left_arrow"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:src="@drawable/step3"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <RelativeLayout
+            android:id="@+id/forward_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/right_arrow"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

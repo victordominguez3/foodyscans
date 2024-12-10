@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_list"
+        android:title="Añadir lista" />
+    <item
+        android:id="@+id/new_recipe"
+        android:title="Crear receta" />
+    <item
+        android:id="@+id/generate_recipe"
+        android:title="Generar receta con ChatGPT" />
+
+</menu>

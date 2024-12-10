@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/explore"
+        android:icon="@drawable/lupa"
+        android:title="Explorar"/>
+
+    <item
+        android:id="@+id/marker"
+        android:icon="@drawable/marcador"
+        android:title="Marcadores"/>
+
+    <item
+        android:id="@+id/recipes"
+        android:icon="@drawable/recetas"
+        android:title="Recetas"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/usuario"
+        android:title="Perfil"/>
+
+</menu>
