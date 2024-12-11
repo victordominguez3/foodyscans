@@ -108,7 +108,8 @@ class ProfileCardFragment : Fragment() {
                 "allergens_tags" to formViewModel.allergens.map { it.toAllergenTag() },
                 "diet" to formViewModel.diet,
                 "otherDiets" to formViewModel.otherDiets,
-                "nutriments" to formViewModel.nutriments
+                "nutriments" to formViewModel.nutriments,
+                "initialForm" to true
             )
 
             formViewModel.saveData(newData) { success ->

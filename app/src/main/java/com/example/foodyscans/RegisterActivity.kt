@@ -67,7 +67,8 @@ class RegisterActivity : AppCompatActivity() {
                 "ecoscore" to "",
                 "allergens" to mutableListOf<String>(),
                 "diet" to mutableListOf<String>(),
-                "otherDiets" to mutableListOf<String>()
+                "otherDiets" to mutableListOf<String>(),
+                "initialForm" to false
             )
 
             auth.createUserWithEmailAndPassword(

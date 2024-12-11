@@ -71,9 +71,6 @@ class MainActivity : AppCompatActivity() {
                             binding.errorMessage.visibility = View.VISIBLE
                         }
                     }
-                    .addOnFailureListener(this) {
-                        Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
-                    }
             }
         }
 

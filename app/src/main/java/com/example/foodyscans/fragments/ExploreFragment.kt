@@ -101,11 +101,9 @@ class ExploreFragment : Fragment(), ProductListener {
         sharedPreferences = requireContext().getSharedPreferences("config", MODE_PRIVATE)
 
         val barcodeLauncher = registerForActivityResult(ScanContract()) { result: ScanIntentResult ->
-            if (result.contents == null) {
-                Toast.makeText(requireContext(), "Cancelled", Toast.LENGTH_LONG).show()
-            } else {
+            if (result.contents != null) {
                 if (sharedPreferences.getBoolean("sound_switch_${auth.currentUser!!.uid}", false)) {
-                    val mediaPlayer = MediaPlayer.create(requireContext(), R.raw.death)
+                    val mediaPlayer = MediaPlayer.create(requireContext(), R.raw.beep)
                     mediaPlayer.start()
                 }
                 productCode = result.contents
@@ -113,14 +111,17 @@ class ExploreFragment : Fragment(), ProductListener {
             }
         }
 
-        val scanOptions = ScanOptions()
-        scanOptions.setDesiredBarcodeFormats(ScanOptions.ONE_D_CODE_TYPES)
-        scanOptions.setPrompt("Escanea el código de barras de tu producto")
-        scanOptions.setBarcodeImageEnabled(false)
-        scanOptions.setBeepEnabled(false)
-        scanOptions.setTorchEnabled(sharedPreferences.getBoolean("flash_switch_${auth.currentUser!!.uid}", false))
+        binding.searchBar.setEndIconOnClickListener {
 
-        binding.searchBar.setEndIconOnClickListener { barcodeLauncher.launch(scanOptions) }
+            val scanOptions = ScanOptions()
+            scanOptions.setDesiredBarcodeFormats(ScanOptions.ONE_D_CODE_TYPES)
+            scanOptions.setPrompt("Escanea el código de barras de tu producto")
+            scanOptions.setBarcodeImageEnabled(false)
+            scanOptions.setBeepEnabled(false)
+            scanOptions.setTorchEnabled(sharedPreferences.getBoolean("flash_switch_${auth.currentUser!!.uid}", false))
+
+            barcodeLauncher.launch(scanOptions)
+        }
     }
 
     private fun getProduct() {

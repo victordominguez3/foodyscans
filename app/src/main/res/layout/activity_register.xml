@@ -146,6 +146,7 @@
         android:backgroundTint="@color/almost_white"
         android:text="CREAR CUENTA"
         android:textColor="@color/dark_green_1"
-        app:cornerRadius="18dp" />
+        app:cornerRadius="18dp"
+        app:rippleColor="@color/gray_ripple"/>
 
 </LinearLayout>

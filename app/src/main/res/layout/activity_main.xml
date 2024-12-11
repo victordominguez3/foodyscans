@@ -102,8 +102,9 @@
         android:text="INICIAR SESIÓN"
         android:textColor="@color/dark_green_1"
         android:backgroundTint="@color/almost_white"
-        app:cornerRadius="18dp"
-        android:layout_marginTop="20dp"/>
+        app:cornerRadius="20dp"
+        android:layout_marginTop="20dp"
+        app:rippleColor="@color/gray_ripple"/>
 
     <TextView
         android:id="@+id/register_text"
